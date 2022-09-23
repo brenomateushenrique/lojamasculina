@@ -1,0 +1,96 @@
+:root {
+    --corfundo : rgb(31, 28, 28);
+    --corprimaria : rgb(255, 255, 255);
+    --corhover : rgb(189, 12, 12);
+}
+
+.dp-menu ul{
+    list-style-type: none;
+    padding: 0;
+}
+
+.dp-menu ul{
+    background-color: var(--corfundo);
+}
+
+.dp-menu ul li{
+    display: inline;
+    position: relative;
+}
+
+.dp-menu ul li a {
+    color: var(--corprimaria);
+    text-decoration: none;
+    padding: 10px;
+    display: inline-block;
+}
+
+.dp-menu ul li a:hover{
+    background-color: var(--corhover);
+
+}
+
+.dp-menu ul ul{
+    display: none;
+    position: absolute;
+    left: 0;
+    transition: all .9s;
+}
+
+.dp-menu ul li:hover ul{
+    display: block;
+}
+
+.dp-menu ul ul {
+    width: 89px;
+}
+
+.dp-menu ul ul li a {
+    display: block;
+}
+.dp-menu ul li:hover > ul{
+    display: block;
+}
+
+.dp-menu ul ul{
+    display: none;
+}
+
+.dp-menu ul li:hover > ul{
+    display: block;
+}
+
+.comp {
+    border: solid 10px;
+}
+
+
+.button {
+    cursor: pointer;
+    background: rgb(0, 255, 13);
+    color: rgb(0, 0, 0);
+    padding: 15px 6px;
+    margin: 0px;
+    border: none;
+    border-radius: 8px;
+    outline: none;
+    text-transform: uppercase;
+    font-weight: 800;
+    letter-spacing: 3px;
+    box-shadow: 0px 10px 40px -12px rgba(0, 0, 0, 0.589);
+}
+
+.buttom {
+    cursor: pointer;
+    background: rgb(255, 0, 0);
+    color: rgb(0, 0, 0);
+    padding: 15px 6px;
+    margin: 0px;
+    border: none;
+    border-radius: 8px;
+    outline: none;
+    text-transform: uppercase;
+    font-weight: 800;
+    letter-spacing: 3px;
+    box-shadow: 0px 10px 40px -12px rgba(0, 0, 0, 0.589);
+}
